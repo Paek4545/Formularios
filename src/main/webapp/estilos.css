@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+a {
+	margin:5px;
+}
+
+li {color:red; font-size: smaller; font-style: italic;}
+
+table {border-collapse: separate; border-spacing: 5px 10px; background-color: pink;}
+
+@media screen and (max-width: 480px) {
+	p {display:none;}
+}	
+
+@media screen and (max-width: 480px){
+	table {color:green;}
+}
+
+.alinear {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /*Le damos a todo el espacio sobrante a los márgenes izquierdo y derecho por igual*/
+}
+
+.alinear2 {
+	text-align:center;
+}
+
+ .olakease{background:black;
+ 	color:white;
+ }
+
+p span{color: red;}
+
+.miestilo{color: brown;}
+
+.otroestilo{color: yellow;}
+
+@media screen and (max-width: 480px) {
+	img {display:none;}
+}

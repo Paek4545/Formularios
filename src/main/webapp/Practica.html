@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ALED pagina web</title>
+    <link rel='stylesheet' type='text/css' href="estilos.css">
+</head>
+<body>
+<header>
+    <table>
+        <th> Bienvenidos a mi página web</th>
+        <th><img id="i2" src="sans.png" width="50" onclick="cambiarImagen();"></th>
+    </table>
+</header> <br>
+<nav>
+   <a href="inicio.html">Página Web</a> 
+	<a href="Formularios.html">Formularios</a><br>
+<nav>
+<h1>Prueba de página web</h1>
+<p> <span>Hola </span>, mi nombre es Tae Hyun Paek Lee, esto es una <b>prueba</b> de mi primera página HTML, donde voy a poner en práctica lo que hemos estado biendo estos días en clase</p>
+<br> Salto de línea </br>
+<p class="alinear2"><span> A continuación veremos 3 imágenes que se irán alternando cada 2 segundos: </span></p>
+<img class="alinear" id="slide" src="imagen1.jpg" width="300">
+<p> (Las imagenes son desde mis descargas así que no se verán reflejadas en la página web si se ve desde otro dispositivo)</p>
+<p>Nos creamos una <span>lista ordenada:</span></p>
+
+<h3 class = "miestilo"> Lista de compras </h3>
+<ol>
+	<li> Manzana </li>
+	<li> Plátano </li>
+	<li> Galleta </li>
+</ol>
+<p id ="i1" onmouseover='cambiarColor();'> Nos creamos una lista desordenada:</p>
+
+<h3 class="otroestilo"> Lista desordenada </h3>
+<ul> 
+	<li> Hola </li>
+	<li> Adiós </li>
+	<li> Un placer </li>
+</ul>
+<p class ="olakease"> Nos creamos una lista desordenada:</p>
+<h3> Lista definición </h3>
+<dl>
+<dt> Escuela </dt>
+<dd> - Establecimiento público donde se da a los niños la instrucción primaria. </dd>
+<dt> Examen</dt>
+<dd>  - Prueba que se hace de la idoneidad de una persona para el ejercicio y profesión de una facultad, oficio o ministerio, o para comprobar o demostrar el aprovechamiento en los estudios. </dd> 
+</dl>
+<h3> Imagen oficial de la UPM: </h3>
+<img id ="i2" src="UPM_logo.png" alt = "Logo Upm" width="300" onmouseover="cambiarImagen();"> Imagen 1 desde descargas
+<img src="https://tse2.mm.bing.net/th/id/OIP.ff4xFWSveSrdRmt3O3GOqgHaIg?rs=1&pid=ImgDetMain&o=7&rm=3" 
+     alt="Imagen desde internet" width="300"> Imagen 2 desde Internet
+ <h3> Enlace a la página oficial de la UPM: </h3>
+ Hacer click al <a href = "https://www.upm.es/"> Enlace </a>
+ <p> Convertimos una imagen en un enlace: </p>
+ <a href="https://www.upm.es/"><img src="UPM_logo.png" width="300"></a>
+
+ <h3> Nos creamos una tabla:</h3>
+ <table border = "3" width="50%" align="left">
+    <tr>
+        <th bgcolor="blue">Nombre</th>
+        <th bgcolor="yellow">Edad</th>
+        <th bgcolor= "red">Ciudad</th>
+    </tr>
+    <tr>
+        <td align="center">Ana</td>
+        <td>22</td>
+        <td>Madrid</td>
+    </tr>
+    <tr>
+        <td align="center">Juan</td>
+        <td>30</td>
+        <td>Valencia</td>
+    </tr>
+</table>
+<br></br>
+<br></br>
+<br></br>
+<p><h3> Introducimos un formulario:</h3></p>
+<form name="hola" method="GET" action="">
+<input id="i3" type="text">
+<input type="checkbox" onclick='alternar();'>
+<input type="button" name="Botón" value = "Pulsar" onclick='holaMundo();'>
+<input type="submit">
+</form>
+<h3>Selección</h3>
+ <form name="formulario" action="calcular" method="GET"> 
+      Número 1: <input type="text" name="n1"> 
+      <br></br>
+      Número 2: <input type="text" name="n2"> 
+      <br></br>
+      <select name='operacion'> 
+    <option value='suma'>Opción 1</option> 
+    <option value='resta'>Opción 2</option> 
+      </select> 
+      <input type="submit" name="enviar" value="Enviar"> 
+   </form>
+
+   <h3>Pulsar el botón para cambiar el fondo de la página web:</h3>
+    <button id="cambiarColor">Cambiar color</button> 
+    <script src="js_practica.js"></script>
+</body>
+</html>
